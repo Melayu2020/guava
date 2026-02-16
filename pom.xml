@@ -65,7 +65,7 @@
     <failureaccess.version>1.0.3</failureaccess.version>
     <gummy-bears-api-23-version>0.12.0</gummy-bears-api-23-version>
     <gwt-maven-plugin.version>2.10.0</gwt-maven-plugin.version>
-    <gwt.version>2.12.2</gwt.version>
+    <gwt.version>2.13.0</gwt.version>
     <j2objc.version>3.1</j2objc.version>
     <java18-signature.version>1.0</java18-signature.version>
     <javahome-resolver-maven-plugin.version>1.0.2</javahome-resolver-maven-plugin.version>
@@ -509,7 +509,7 @@
         </property>
       </activation>
       <properties>
-        <test.add.opens></test.add.opens>
+        <test.add.opens/>
       </properties>
     </profile>
     <profile>
@@ -522,7 +522,7 @@
         </property>
       </activation>
       <properties>
-        <test.add.opens></test.add.opens>
+        <test.add.opens/>
       </properties>
     </profile>
     <!-- JDiff and the Gradle integration tests need Java 11 to be installed, and they need to know where it's located so that they can set JAVA_HOME to point to it. The following profile downloads a temurin Java 11 (if one isn't already available) and writes its location to target/java_11_home. This lets our JDiff and Gradle-integration-test scripts invoke the `print-java-11-home` profile and then read that file. -->
